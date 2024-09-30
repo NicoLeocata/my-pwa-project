@@ -1,130 +1,48 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Base styling */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Header styling */
 header {
-    background: #e50000; /* Coca-Cola red */
+    background-color: #333;
     color: white;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 1rem;
 }
 
-header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul {
-    list-style: none;
+nav ul {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    list-style-type: none;
+    padding: 0;
 }
 
-header ul li {
-    margin: 0 15px;
-}
-
-header ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-header ul li a:hover {
-    color: #ffd700; /* Golden hover effect */
-}
-
-/* Hero section */
 main {
-    text-align: center;
-    padding: 60px 20px;
-    background-image: url('https://images.unsplash.com/photo-1550735006-6a4a3aa130ff?crop=entropy&fit=crop&w=1920&h=1080&q=80'); /* Example background */
-    background-size: cover;
-    background-position: center;
-    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    padding: 2rem;
 }
 
-main h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 1rem;
 }
 
-main p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+.content {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
 }
 
-/* Call to action button */
-.button {
-    display: inline-block;
-    background-color: #e50000;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #d40000;
-}
-
-/* Footer styling */
 footer {
-    background: #000; /* Coca-Cola black footer */
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 0.9rem;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    header ul {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main h1 {
-        font-size: 3rem;
-    }
-
-    main p {
-        font-size: 1.2rem;
-    }
-
-    .button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
+    padding: 1rem;
 }

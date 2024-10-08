@@ -1,0 +1,7 @@
+/* media-queries.css */
+/* Example media query (add your actual queries here) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller columns for smaller screens */
+    }
+}

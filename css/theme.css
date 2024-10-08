@@ -1,0 +1,35 @@
+/* theme.css */
+/* Example CSS variables for light and dark themes */
+
+:root {
+    --background-color: #f9f9f9;
+    --text-color: black;
+    --header-bg-color: black;
+    --header-text-color: white;
+    --footer-bg-color: black;
+    --footer-text-color: white;
+}
+
+[data-theme="dark"] {
+    --background-color: #333;
+    --text-color: white;
+    --header-bg-color: #222;
+    --header-text-color: #fff;
+    --footer-bg-color: #222;
+    --footer-text-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+}

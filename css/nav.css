@@ -1,0 +1,15 @@
+/* nav.css */
+/* Placeholder for navigation-related styles */
+/* Example nav styling (add actual navigation styles when you create a nav element) */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,15 +1,18 @@
-/* base.css */
-/* Basic reset for margin and padding */
+/* Reset for body */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
-/* Reset margins and paddings for the body and html */
+body {
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica;
+    font-weight: bold;
+}
+
+
 html, body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -17,21 +20,12 @@ html, body {
     flex-direction: column;
 }
 
-/* Make the main content area (grid) take up all the available space */
+/* Main content should grow to fill available space */
 main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-}
-
-/* Make the grid container take up full height of main */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: auto;
-    gap: 15px;
-    padding: 20px;
-    flex-grow: 1;
+    justify-content: stretch;
 }
 
 /* Remove any unwanted margin from the footer */

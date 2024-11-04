@@ -2,8 +2,11 @@
 
 /* Grid container takes up the full height */
 .grid-container {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
 }
+
 
 
 /* Header Nav */
